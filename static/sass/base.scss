@@ -11,6 +11,8 @@ $primary-color: $blue;
 
 // Fonts
 $mark-pro-regular: 'Mark Pro';
+$mark-pro-bold: 'Mark Pro Bold';
+$mark-pro-light: 'Mark Pro Light';
 
 // Colors
 
@@ -38,6 +40,63 @@ h1, h2, h3 {
   margin-bottom: 0;
 }
 
+h2.calendar-name {
+  font-family: $mark-pro-light;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  line-height: 35px;
+  width: 396px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+h2.calendar-name.selected {
+  font-family: $mark-pro-bold;
+  text-decoration: underline;
+}
+
+h2.calendar-name.last {
+  margin: 0;
+  padding-bottom: 30px;
+}
+  
+  h3.calendar-country {
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  //text-decoration: underline overline;
+  width: 396px;
+  text-align: center;
+  margin: 0;
+  margin-top: 40px;
+  color: $blue;
+  }
+
+.wide-button {
+  width: 255px;
+  height: 80px;
+
+  border-radius: 5%;
+  border: none;
+  background: linear-gradient(135deg, white, white);
+  margin-top: -10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 6%;
+
+  box-shadow: 3px 4px 5px rgba(46, 46, 46, 0.4);
+  transition: box-shadow 0.1s ease-in;
+  font-family: 'Mark Pro Light';
+  flex-direction: row;
+}
+
+h3.center {
+  padding-top: 6%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 h1 {
   font-family: 'Mark Pro Medium';
   font-size: 5rem;
@@ -47,6 +106,26 @@ h3 {
   font-family: 'Mark Pro Light';
   font-size: 1.875rem;
   margin: 0 0 28px 0;
+}
+
+h4.calendar-border {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 10px;
+  width: 85%;
+  text-align: center;
+  margin: 0;
+  color: $blue;
+  padding-top: 10%;
+}
+
+h4.calendar-message {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 45px;
+  width: 85%;
+  text-align: center;
+  margin: 0;
 }
 
 a {

@@ -60,7 +60,41 @@ i.icon {
   &.icon-arrow-right {
     background-image: url('../icons/arrow-right.svg');
   }
+  
+  &.icon-calendar-settings {
+    background-image: url('../icons/calendar-settings.svg');
+    background-position: center;
+    width: 60%;
+  }
 
+  &.icon-wifi-full {
+    background-image: url('../icons/wifi/wifi-full.svg');
+    background-position: center;
+    width: 60%;
+    color: rebeccapurple !important;
+  }
+
+  &.icon-wifi-medium {
+    background-image: url('../icons/wifi/wifi-medium.svg');
+    background-position: center;
+    width: 60%;
+    color: rebeccapurple !important;
+  }
+
+  &.icon-wifi-low {
+    background-image: url('../icons/wifi/wifi-low.svg');
+    background-position: center;
+    width: 60%;
+    color: rebeccapurple !important;
+  }
+
+  &.icon-wifi-not-connected {
+    background-image: url('../icons/wifi/wifi-not-connected.svg');
+    background-position: center;
+    width: 60%;
+    color: rebeccapurple !important;
+  }
+  
   &.icon-cancel {
     background-image: url('../icons/cancel.svg');
     background-position: center center;

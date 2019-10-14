@@ -15,7 +15,7 @@
     height: 44px;
     line-height: 44px;
     text-align: center;
-    margin: 27px 0 12px 0;
+    margin: 45px 0 12px 0;
     font-size: 22px;
     font-family: 'Mark Pro Book';
     color: $primary-color;
@@ -66,5 +66,20 @@
       transition: transform $transition-duration ease-in;
       transform: rotate(180deg);
     }
+  }
+
+  button.calendar-btn {
+    position: absolute;
+    right: 150px;
+    top: -31.5px;
+    z-index: 101;
+  }
+
+  button.wifi-btn {
+    position: absolute;
+    right: 250px;
+    top: -31.5px;
+    z-index: 101;
+    color: black;
   }
 }

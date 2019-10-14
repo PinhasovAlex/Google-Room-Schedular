@@ -36,8 +36,8 @@ const Free = ({ nextEvent, onClick15, onClick30}) => {
           className={lessThan30MinutesToEvent(nextEvent) ? 'hidden' : '' }
         />
       </div>
-      <h1>{"It's free"}</h1>
-      <h2>{remainingTimeMessage}</h2>
+      <h1 className="center">{"It's free"}</h1>
+      <h2 className="center">{remainingTimeMessage}</h2>
     </div>
   );
 };

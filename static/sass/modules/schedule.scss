@@ -30,8 +30,12 @@
     font-family: "Mark Pro Book";
     letter-spacing: 0.7px;
     color: $primary-color;
-    margin: 65px 0 31px 0;
+    margin: 65px 0 3px 0;
     line-height: 44px;
+  }
+
+  .schedule-header.calendar {
+    margin: 65px 0 10px 0;
   }
 
   .event-duration {

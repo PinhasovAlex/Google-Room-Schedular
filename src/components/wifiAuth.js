@@ -2,23 +2,18 @@ import React, { Component } from "react";
 import Keyboard from "react-simple-keyboard";
 import "../../static/sass/modules/CalendarsAuth.scss";
 
-export default class CalendarsAuth extends Component {
+export default class WifiAuth extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            layoutName: "default",
-            input: ""
-          };
     }
 
     onChange = input => {
+        const { ssid } = this.props;
+        console.log(ssid,"alex")
         this.setState({
         input: input
         });
         console.log("Input changed", input);
-        if (input == "123") {
-            window.location.hash = 'calendars';
-        }
     };
 
     onKeyPress = button => {

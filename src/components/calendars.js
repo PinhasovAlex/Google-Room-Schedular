@@ -36,11 +36,11 @@ export default class Calendars extends Component {
 
     tlv.push ({
       key: "Pedasi",
-      value: "selina.com_3238323530373033353933@resource.calendar.google.com"
+      value: "Pedasi"
       });
     tlv.push ({
       key: "Miami",
-      value: "selina.com_39373132333730323332@resource.calendar.google.com"
+      value: "Miami"
       });
 
     panama.push ({
@@ -55,16 +55,6 @@ export default class Calendars extends Component {
       dictionary.push({
       key: "Tel-Aviv",
       value: tlv
-      });
-
-      dictionary.push({
-      key: "Panama",
-      value: panama
-      });
-
-      dictionary.push({
-      key: "Panama",
-      value: panama
       });
 
       dictionary.push({
@@ -132,7 +122,7 @@ export default class Calendars extends Component {
         transitionEnterTimeout={500}
         transitionLeaveTimeout={300}>
         <div className="flex-container schedule">
-          <h3 className="schedule-header calendar">Selina Calendars</h3>
+          <h3 className="schedule-header calendar">Calendars</h3>
           <h4 className="calendar-message">Restart the device after selection to apply changes</h4>
           <div className="schedule-event-list">
             <div className="flex-container">

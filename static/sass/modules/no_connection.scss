@@ -9,7 +9,7 @@
 
   .icon {
     display: inline-block;
-    width: 80vw;
+    width: 50vw;
     height: 50vh;
 
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     background-size: 100%;
 
     &.icon-no-connection {
-      background-image: url('../icons/no-connection.svg');
+      background-image: url('../icons/no-connection.svg');      
       color: white;
     }
   }
@@ -27,4 +27,11 @@
     text-align: center;
     width: 80vw;
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
 }

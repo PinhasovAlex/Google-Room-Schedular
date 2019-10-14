@@ -14,7 +14,7 @@
   }
 
   .status-details {
-    height: 410px;
+    height: 430px;
     padding: 40px;
     background-color: $primary-color;
     text-align: center;
@@ -28,14 +28,12 @@
       font-family: 'Mark Pro Bold';
       letter-spacing: 1.3px;
       font-size: 80px;
-      width: 396px;
     }
 
     h2 {
       font-family: 'Mark Pro Book';
       letter-spacing: 0.5px;
       font-size: 30px;
-      width: 396px;
       height: 44px;
     }
 
@@ -52,7 +50,7 @@
       margin: 4px 0 28px 0;
       font-family: 'Mark Pro Book';
       letter-spacing: 0.5px;
-      font-size: 10;
+      font-size: 30px;
     }
 
     .action-buttons {
