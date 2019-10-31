@@ -117,12 +117,18 @@ export default class EventDetails extends Component {
         <Button icon="arrow-up" className={expandbtnClasses} handleClick={this.handleExpandDetails.bind(this)}/>
         <Button icon="calendar-settings" className={calendarbtnClasses} handleClick={this.handleShowChooseCalendar.bind(this)}/>
         <Button icon={wifiSignal} className={wifibtnClasses} handleClick={this.handleShowAvailableWiFi.bind(this)}/>
-        <h3 className="event-details-status">
-          {isCurrent ? 'CURRENT MEETING' : 'COMING UP'}
-        </h3>
+        <div className="flex-conatiner-hangout">
+          <h3 className="event-details-status">
+            {isCurrent ? 'CURRENT MEETING' : 'COMING UP'}
+          </h3>
+          <EventDuration event={event} />
+        </div>
         <h3 className="event-details-name">{event.visibility == "private" ? "Private" : event.summary}</h3>
-        <EventDuration event={event} />
         <p className="event-details-creator">{event.creator.displayName || event.creator.email}</p>
+        <div className="flex-conatiner-hangout">
+          <div className="event-hangout-meet"></div>
+          <p className="event-hangout-creator">{event.hangoutLink == null ? "None" : event.hangoutLink}</p>
+        </div>
         <ul className="event-details-attendees">{this.attendees()}</ul>
       </div>
     );
