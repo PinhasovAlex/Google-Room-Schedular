@@ -120,7 +120,7 @@ export default class EventDetails extends Component {
         <h3 className="event-details-status">
           {isCurrent ? 'CURRENT MEETING' : 'COMING UP'}
         </h3>
-        <h3 className="event-details-name">{event.summary}</h3>
+        <h3 className="event-details-name">{event.visibility == "private" ? "Private" : event.summary}</h3>
         <EventDuration event={event} />
         <p className="event-details-creator">{event.creator.displayName || event.creator.email}</p>
         <ul className="event-details-attendees">{this.attendees()}</ul>

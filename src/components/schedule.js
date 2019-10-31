@@ -60,7 +60,7 @@ export default class Schedule extends Component {
           {isBefore ? this.timeLine() : null }
           <EventDuration event={event} />
           {(isCurrent(event)) ? this.timeLine() : null }
-          <h3 className="schedule-event-name">{event.summary}</h3>
+          <h3 className="schedule-event-name">{event.visibility == "private" ? "Private" : event.summary}</h3>
         </div>
       )
     });
