@@ -15,7 +15,7 @@
 .event-details {
   position: relative;
   background-color: $white;
-  height: 640px;
+  //height: 640px;
   background-color: white;
 
   .event-details-status {
@@ -48,6 +48,7 @@
   .event-duration {
     font-family: "Mark Pro Bold";
     font-size: 20px;
+
     margin-top: 35px;
     text-align: right;
   }
